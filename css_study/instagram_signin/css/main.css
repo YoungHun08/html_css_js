@@ -1,0 +1,145 @@
+body {
+    background-color: black;
+}
+
+.main-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 44px;
+}
+
+.main-box-container {
+    margin-top: 12px;
+    width: 350px;
+}
+
+.main-box-border {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border: 1px solid rgb(245, 245, 245);
+
+    & > header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > i {
+            margin: 36px 0 12px;
+        }
+    }
+}
+
+.main-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.main-container {
+    padding: 10px 0;
+    margin-bottom: 12px;
+}
+
+.main-container-1 {
+    margin: 0 40px 6px;
+}
+
+.main-container-2 {
+    margin: 8px 40px;
+}
+
+.input-box-1 {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 3px;
+    width: 100%;
+    height: 38px;
+    background-color: rgb(18, 18, 18);
+    font-size: 12px;
+
+    & > input {
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        padding: 9px 0 7px 8px;
+        width: 100%;
+        height: 100%;
+        background-color: #121212;
+        font-size: 16px;
+
+        &::-webkit-input-placeholder {
+            color: 00000000;
+        }
+    
+        &:not(:placeholder-shown) {
+            padding: 14px 0 2px 8px;
+        }
+    
+        &:not(:placeholder-shown) + label {
+            top: 9px;
+            font-size: 10px;
+        }
+    
+    }
+
+    & > label {
+        position: absolute;
+        top: 50%;
+        left: 9px;
+        transform: translateY(-50%);
+        font-size: 12px;
+        color: #dbdbdbb2;
+        cursor: text;
+        transition: all 0.1s ease-in-out;
+    }
+}
+
+.button-facebook {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: rgb(0, 149, 246);
+    cursor: pointer;
+
+    &:hover {
+        background-color: #1877f2;
+    }
+
+    &:disabled {
+        background-color: #0095f699;
+    }
+}
+
+.main-container-3 {
+    margin: 14px 40px 22px;
+    display: flex;
+    align-items: center;
+
+    & > .side-line {
+        flex-grow: 1;
+        height: 1px;
+        background-color: #dbdbdb;
+    }
+
+    & > .line {
+        margin: 0 18px;
+        font-size: 13px;
+        font-weight: 600;
+        color: rgb(168, 168, 168);
+    }
+}
